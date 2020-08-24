@@ -1,0 +1,66 @@
+.visual_content .buttons {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 60px;
+    z-index: 116;
+    opacity: 0;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.visual_content:hover .buttons {
+    opacity: 1;
+}
+
+.visual_content .buttons #play-button, .visual_content .buttons #volume-mute {
+    display: inline-block;
+    font-size: 0;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    color: #ffffff;
+    background: #000;
+    cursor: pointer;
+}
+
+.visual_content .buttons #play-button {
+    background: url('../../../../img/da_image/visual_play_btn.png') no-repeat 0 0;
+}
+.visual_content .buttons #play-button.on {
+    background: url('../../../../img/da_image/visual_pause_btn.png') no-repeat 0 0;
+}
+
+.visual_content .buttons #volume-mute {
+    margin-left: 5px;
+    background: url('../../../../img/da_image/visual_mute_btn.png') no-repeat 0 0 ;
+}
+.visual_content .buttons #volume-mute.on {
+    background: url('../../../../img/da_image/visual_unmute_btn.png') no-repeat 0 0;
+}
+
+
+.visual_content .video-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+    height: 0;
+    padding-bottom:100%;
+    top:50%;
+    transform: translateY(-50%);
+}
+.visual_content .video-container iframe {
+    position: absolute;
+    width: 100%;height: 100%;
+    top:0;
+    left:0;
+}
+
+@media only screen and (max-width: 860px) {
+    .visual_content .video-container {
+        padding-bottom: 200%;
+        width: 130%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

@@ -1,0 +1,53 @@
+.layer_tab  {
+    width: 100%;
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.layer_tab ul.lnb_tab li {
+    height: 2.86em;
+    font-size: 17px;
+    font-weight: 400;
+    width: 50%;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-bottom: 1px #222222 solid;
+}
+.layer_tab ul.lnb_tab li.on {
+    background-color: #222222;
+    border-top: 1px #222222 solid;
+}
+.layer_tab ul.lnb_tab li span {
+    color: #666666;
+}
+.layer_tab ul.lnb_tab li.on span {
+    color: #ffffff;
+}
+
+.lnb_tab_wrap {
+    padding:5px 20px;
+    width: 100%;
+}
+.lnb_tab_wrap .lnb_tab_box {
+    height: 0px;
+    width: 100%;
+    overflow: hidden;
+}
+.lnb_tab_wrap .lnb_tab_box.on {
+    height: auto;
+}
+
+.lnb_tab_wrap .lnb_tab_box ul li a {
+    width: calc(100% - 24px);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 2.4em;
+    color:#333333;
+    background: none;
+    padding: 0.5em 0;
+    transition: all 0.2s;
+}

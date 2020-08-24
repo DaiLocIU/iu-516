@@ -1,0 +1,38 @@
+.layer_cs {
+    margin: 15px;
+    border-top: 1px #333333 solid;
+    width: calc(100% - 30px);
+}
+.layer_cs dt, .layer_cs dd {
+    text-align: center;
+}
+
+.layer_cs dt {
+    margin-top: 1.65em;
+    margin-bottom: 1.25em;
+    font-size: 13px;
+    line-height: 1em;
+    color: #333333;
+}
+.layer_cs dd {
+    display: flex;
+    flex-flow: column;
+}
+
+.layer_cs dd strong {
+    margin-bottom: 1em;
+    line-height: 1em;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333333;
+}
+.layer_cs dd a {
+    width: 100%;
+    height: 2.65em;
+    line-height: 2.65em;
+    font-size: 16px;
+    background-color: #333333;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}

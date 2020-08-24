@@ -1,0 +1,101 @@
+.hd_m_lnb {
+    display: none;
+    position: absolute;
+}
+
+@media only screen and (max-width: 860px) {
+    .hd_m_lnb {
+        display: block;
+        position: relative;
+        order: 3;
+        display: flex;
+    }
+    .hd_m_lnb li + li {
+        margin-left: 2.5em;
+    }
+    .hd_m_lnb li a {
+        font-size: 12px;
+        height: 2.4em;
+        display: block;
+    }
+    .hd_m_lnb li {
+        position: relative;
+    }
+    .hd_m_lnb li a.hd_m_cart {
+        width: 2.89em;
+        background: url('../../../../img/da_image/icon_cart.png') no-repeat 50% 50%;
+        background-size: auto 100%;
+    }
+    .hd_m_lnb li a.hd_m_search {
+        width: 2.4em;
+        background: url('../../../../img/da_image/icon_search.png') no-repeat 50% 50%;
+        background-size: auto 100%;
+    }
+    .hd_m_lnb li a.hd_m_cart strong {
+        position: absolute;
+        top: -0.6em;
+        right: -1em;
+        height: 1.8em;
+        min-width: 1.8em;
+        border-radius: 1.8em;
+        font-size: 10px;
+        font-weight: 400;
+        padding: 0 2px;
+        background-color: #222222;
+        color:#ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .hd_m_lnb li a {
+        height: 2.2em;
+    }
+    .hd_m_lnb li a.hd_m_search {
+        width: 2.2em;
+    }
+    .hd_m_lnb li + li {
+        margin-left: 1.8em;
+    }
+    .hd_m_lnb li a.hd_m_cart {
+        width: 2.8em;
+    }
+    .hd_m_lnb li a.hd_m_search {
+        width: 2.2em;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .hd_m_lnb {
+         right: 5px;
+    }
+    .hd_m_lnb li a {
+        height: 2.0em;
+    }
+    .hd_m_lnb li + li {
+        margin-left: 1.4em;
+    }
+
+    .hd_m_lnb li a.hd_m_cart {
+        width: 2.6em;
+    }
+    .hd_m_lnb li a.hd_m_search {
+        width: 2.0em;
+    }
+ }
+@media only screen and (max-width: 500px) {
+    .hd_m_lnb li a {
+        height: 1.9em;
+    }
+    .hd_m_lnb li + li {
+        margin-left: 1.25em;
+    }
+    .hd_m_lnb li a.hd_m_cart {
+        width: 2.4em;
+    }
+    .hd_m_lnb li a.hd_m_search {
+        width: 1.9em;
+    }
+}
+

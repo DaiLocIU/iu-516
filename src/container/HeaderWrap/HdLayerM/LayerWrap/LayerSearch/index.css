@@ -1,0 +1,35 @@
+.layer_search {
+    padding: 0px 15px  25px;
+    background-color: #f2f2f2;
+    width: 100%;
+}
+.layer_search > .top_search {
+    height: 45px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #e7e7e7;
+    width: 100%;
+    padding: 10px 15px;
+    position: relative;
+    z-index: 5;
+}
+.layer_search > .top_search .top_text_cont .top_search_text {
+    height: 1.64em;
+    line-height: 1.64em;
+    font-size: 14px;
+    width: calc(100% - 34px);
+}
+
+.layer_search > .top_search .top_text_cont #btn_search_top {
+   width: 21px;
+   height: 21px;
+}
+
+.layer_search > .top_search .search_cont {
+    width: calc(100% + 2px);
+    left: -1px;
+    top: 44px;
+    position: absolute;
+    border-radius: 10px;
+    border: 1px solid #e7e7e7;
+}

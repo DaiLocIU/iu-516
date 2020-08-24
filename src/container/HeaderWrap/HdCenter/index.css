@@ -1,0 +1,78 @@
+.hd_center {
+    position: relative;
+    z-index: 5;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+/* CSS in HdTop.css */
+.w_custom {}
+
+.hd_center > .w_custom {
+    height: 148px;
+    transition: all 0.2s;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hd_center h1 {
+    transition: all 0.2s;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.hd_center h1 img {
+    width: auto;
+    height: 90px;
+}
+
+@media only screen and (max-width: 860px) {
+    .hd_center > .w_custom {
+        height: 90px;
+    }
+    .hd_center h1 {
+        order: 2;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .hd_center > .w_custom {
+        height: 80px;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .hd_center > .w_custom {
+        height: 70px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .hd_center > .w_custom {
+        height: 56px;
+    }
+}
+@media only screen and (max-width: 860px) {
+    .hd_center h1 img {
+        height: 70px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .hd_center h1 img {
+        height: 65px;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .hd_center h1 img {
+        height: 55px ;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .hd_center h1 img {
+        height: 40px;
+    }
+}
+
